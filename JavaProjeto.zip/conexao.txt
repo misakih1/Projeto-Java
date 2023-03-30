@@ -1,0 +1,15 @@
+CREATE DATABASE conexao;
+
+CREATE TABLE cliente (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(20) NOT NULL,
+    cpf varchar(20) NOT NULL,
+    telefone varchar (20)
+    );
+
+CREATE TABLE veiculo (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    modelo varchar(20) NOT NULL,
+    placa varchar(20) NOT NULL,
+    preco double DEFAULT 0
+    );
